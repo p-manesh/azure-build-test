@@ -31,7 +31,7 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: FunctionApp1'
   inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: FunctionApp1
 
 - task: VSTest@2
