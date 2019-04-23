@@ -10,7 +10,7 @@ namespace FunctionApp1
 {
     public static class Function1
     {
-        [FunctionName("Test2")]
+        [FunctionName("Test3")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
